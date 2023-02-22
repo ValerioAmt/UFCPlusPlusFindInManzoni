@@ -26,7 +26,7 @@ int main()
         
         if (paragrafo != riga)
         {
-            paragrafo += riga;   //cout << paragrafo;        //cout << paragrafo;
+            paragrafo += riga;              //cout << paragrafo;        //cout << paragrafo;
         }
         // cout << "RIGA: " << riga << endl;
         numeroRigaParolaTrovata++;
@@ -47,10 +47,10 @@ int main()
                                                                //for (int y = ; y < 7;y++)
                                                                            //if(paragrafo != "")
                       //for (numeroRigaParolaTrovata = ; numeroRigaParolaTrovata < 7;numeroRigaParolaTrovata++)
-                      {cout <<numeroRigaParolaTrovata <<" - " <<riga  << endl;
-                                                                             //cout << paragrafo <<endl;
+                      cout <<numeroRigaParolaTrovata <<" - " <<riga  << endl;
+                          cout<< endl << paragrafo << endl;                                                   //cout << paragrafo <<endl;
 
-                      }                                                     
+                                                                           
                                                                             /*
                                                                           for (int y = 0;y<7;y++)
                          
