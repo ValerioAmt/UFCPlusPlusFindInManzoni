@@ -16,14 +16,14 @@ int main()
     // variabili
     string paragrafo = "";
     string riga;
-    string parola = "polvere";
+    string parola = "Sparir";
     int numeroRigaParolaTrovata=0;
- 
+    int numeroRiga = 0;
     // cout << "INIZIO" << endl;
  
     while(getline(fileInput, riga))
     {
-        
+        numeroRiga++;
         if (riga != "")
         {
             paragrafo += riga + "\n";              //cout << paragrafo;        //cout << paragrafo;
@@ -57,9 +57,9 @@ int main()
                         if(riga == "" ){
                             break;
                          } else {
-                            righeMancanti += riga ;
+                            righeMancanti += riga + "\n";
                          }
-                         cout<< endl  <<paragrafo + righeMancanti <<endl;
+                         cout<< endl <<paragrafo + righeMancanti <<endl;
                                                                          //cout << paragrafo <<endl;
 
                                                                            
