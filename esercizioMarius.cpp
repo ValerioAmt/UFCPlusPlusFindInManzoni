@@ -16,7 +16,7 @@ int main()
     // variabili
     string paragrafo = "";
     string riga;
-    string parola = "percossa";
+    string parola = "polvere";
     int numeroRigaParolaTrovata=0;
  
     // cout << "INIZIO" << endl;
@@ -24,10 +24,13 @@ int main()
     while(getline(fileInput, riga))
     {
         
-        if (paragrafo != riga)
+        if (riga != "")
         {
-            paragrafo += riga;              //cout << paragrafo;        //cout << paragrafo;
+            paragrafo += riga + "\n";              //cout << paragrafo;        //cout << paragrafo;
         }
+         else {
+            paragrafo = "";
+         }
         // cout << "RIGA: " << riga << endl;
         numeroRigaParolaTrovata++;
         bool flag = false;                              // SE TROVO LA PAROLA IMPOSTO A TRUE
@@ -48,7 +51,16 @@ int main()
                                                                            //if(paragrafo != "")
                       //for (numeroRigaParolaTrovata = ; numeroRigaParolaTrovata < 7;numeroRigaParolaTrovata++)
                       cout <<numeroRigaParolaTrovata <<" - " <<riga  << endl;
-                          cout<< endl << paragrafo << endl;                                                   //cout << paragrafo <<endl;
+                      string righeMancanti = "";
+                      while(getline(fileInput, riga))
+                      
+                        if(riga == "" ){
+                            break;
+                         } else {
+                            righeMancanti += riga ;
+                         }
+                         cout<< endl  <<paragrafo + righeMancanti <<endl;
+                                                                         //cout << paragrafo <<endl;
 
                                                                            
                                                                             /*
