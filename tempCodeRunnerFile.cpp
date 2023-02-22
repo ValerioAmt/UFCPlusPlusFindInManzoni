@@ -1,1 +1,0 @@
-paragrafo = riga;

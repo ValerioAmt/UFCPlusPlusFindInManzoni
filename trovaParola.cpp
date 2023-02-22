@@ -13,8 +13,25 @@ int main()
 
     ifstream fileInput("maggio.txt");
 
-    while (getline(fileInput, riga))
-    {
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
 
         cout << "Inserisci una parola, per fermare il programma inserisci EXIT " << endl;
         cin >> parolaInserita;
