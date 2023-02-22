@@ -1,1 +1,1 @@
-cout <<i <<" - " <<riga << endl;
+paragrafo = riga;

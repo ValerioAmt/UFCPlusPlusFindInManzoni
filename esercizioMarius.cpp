@@ -23,10 +23,10 @@ int main()
  
     while(getline(fileInput, riga))
     {
-        paragrafo = riga;
         
+        if (paragrafo != riga)
         {
-            cout << paragrafo;
+            paragrafo += riga;   //cout << paragrafo;        //cout << paragrafo;
         }
         // cout << "RIGA: " << riga << endl;
         numeroRigaParolaTrovata++;
@@ -42,16 +42,22 @@ int main()
                 if (riga[i] == parola[j]) //se le lettere sono uguali
                 {
                     if(j==parola.length()-1) //se le lettere sono uguali E sono all'ultima lettera della parola
-                    {   string paragrafo;
+                    {   
                         flag = true; //PAROLA TROVATA
-                        //for (int y = ; y < 7;y++)
-                        
-                           /*
-                           for (int y = 0;y<7;y++)
-                           getline(fileInput, paragrafo);
+                                                               //for (int y = ; y < 7;y++)
+                                                                           //if(paragrafo != "")
+                      //for (numeroRigaParolaTrovata = ; numeroRigaParolaTrovata < 7;numeroRigaParolaTrovata++)
+                      {cout <<numeroRigaParolaTrovata <<" - " <<riga  << endl;
+                                                                             //cout << paragrafo <<endl;
+
+                      }                                                     
+                                                                            /*
+                                                                          for (int y = 0;y<7;y++)
+                         
+                                                                        getline(fileInput, paragrafo);
                             
                             cout << paragrafo << endl;*/
-                    cout <<i <<" - " <<riga  << endl;
+                    
                     }             
                     i++;
                     
