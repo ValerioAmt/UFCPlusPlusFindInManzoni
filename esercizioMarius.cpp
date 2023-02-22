@@ -14,6 +14,7 @@ int main()
     // ofstream fileOutput("output.txt"); // apertura file in scrittura
  
     // variabili
+    string paragrafo = "";
     string riga;
     string parola = "percossa";
     int numeroRigaParolaTrovata=0;
@@ -22,12 +23,17 @@ int main()
  
     while(getline(fileInput, riga))
     {
+        paragrafo = riga;
+        
+        {
+            cout << paragrafo;
+        }
         // cout << "RIGA: " << riga << endl;
         numeroRigaParolaTrovata++;
         bool flag = false;                              // SE TROVO LA PAROLA IMPOSTO A TRUE
         for (int i = 0; i < riga.length(); i++)         // for tutta riga
         {
-            
+        
             // cout << "i: " << i << endl;
             for (int j = 0; j < parola.length(); j++)   // for tutta parola
             { 
@@ -39,11 +45,13 @@ int main()
                     {   string paragrafo;
                         flag = true; //PAROLA TROVATA
                         //for (int y = ; y < 7;y++)
-                        cout <<i <<" - " <<riga << endl;
+                        
+                           /*
+                           for (int y = 0;y<7;y++)
                            getline(fileInput, paragrafo);
-                           for (int y = 0;y=paragrafo.length();y++)
-                            if (paragrafo == "")
-                            cout << ;
+                            
+                            cout << paragrafo << endl;*/
+                    cout <<i <<" - " <<riga  << endl;
                     }             
                     i++;
                     
@@ -56,7 +64,7 @@ int main()
         }
  
         if(flag==true)
-        {
+        {    
             cout << "PAROLA TROVATA IN RIGA: " << numeroRigaParolaTrovata << endl;
         }
     }
